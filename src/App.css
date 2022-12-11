@@ -1,0 +1,378 @@
+body{
+    width:960px;
+    height:1300px;
+    margin:auto;
+    background-image:linear-gradient(#52042c,#890549);
+    background-repeat: no-repeat;
+    color:white;
+    font-family:gloryn;
+}
+
+h1, h2, p{
+    margin:0;
+}
+
+@font-face{
+    font-family:gloryn;
+    src:url("/public/fontit/Gloryn\ Regular.ttf")
+}
+
+@keyframes haivytys{
+    0%{opacity:0%}
+    100%{opacity:100%}
+    }
+
+@keyframes tekstihaivytys{
+    0%{opacity:0%}
+    25%{opacity:0%}
+    50%{opacity:100%}
+    }
+
+#fade{
+  animation:haivytys 3s;
+}
+
+#textfade{
+  animation:tekstihaivytys 10s;
+}
+/* Banneri ja logoteksti */
+#banner{
+    margin:auto;
+    background-image:url("https://cpeny003-xamk.github.io/portfolio/images/kuvabanner.png");
+    width:560px;
+    height:386px;
+    animation:haivytys 3s;
+}
+
+#text{
+    background-image:url("https://cpeny003-xamk.github.io/portfolio/images/pnlogo.png");
+    /* margin-top:305px; */
+    margin:auto;
+    width:348px;
+    height:80px;
+    animation:tekstihaivytys 5s;
+}
+
+/* Sivuston rakenne */
+#wrapper{
+    border: 2px solid black;
+    background-color:teal;
+    border-radius:49px;
+    height:900px;
+    box-shadow:5px 5px 5px black;
+}
+
+#header{
+    font-size:30px;
+    text-shadow: 2px 2px 2px black;
+    line-height:90px;
+    margin:auto;
+    text-align:center;
+    width:100%;
+    height:100px;
+    animation:tekstihaivytys 7s;
+}
+
+#footer{
+    overflow:auto;
+    text-align:center;
+    width:100%;
+    height:100px;
+    font-size:20px;
+    line-height:75px;
+    text-shadow: 2px 2px 2px black;
+}
+
+/* Navigaation määritykset */
+#nav{
+    float:left;
+    background-color:green;
+    border-right: 2px solid lightseagreen;
+    border-top: 2px solid lightseagreen;
+    border-bottom: 2px solid lightseagreen;
+    box-sizing:border-box;
+    width:100px;
+    height:700px;
+}
+
+ul{
+    float:left;
+    /*background-color:brown;*/
+    width:100px;
+}
+
+li{
+    color:black;
+    text-align:center;
+    margin:5px;
+    margin-left:-35px;
+    width:90px;
+    height:20px;
+    list-style-type: none;
+    background-color:lightseagreen;
+    border-radius:5px;
+    box-shadow: 2px 2px 2px black;;
+}
+#a{
+    background-image:url("https://cpeny003-xamk.github.io/portfolio/images/painike_tietoja.png");
+    animation:haivytys 3.5s;
+}
+#b{
+    background-image:url("https://cpeny003-xamk.github.io/portfolio/images/projektini.png");
+    animation:haivytys 3.5s;
+}
+#c{
+    background-image:url("https://cpeny003-xamk.github.io/portfolio/images/painike_sos.png");
+    animation:haivytys 3.5s;
+}
+#d{
+    background-image:url("https://cpeny003-xamk.github.io/portfolio/images/painike_videot.png");
+    animation:haivytys 3.5s;
+}
+
+#nav a:link, a:visited{
+    color:black;
+    text-decoration:none;
+}
+#nav i{
+    width:90px;
+    height:20px;
+    background-image:url("https://cpeny003-xamk.github.io/portfolio/images/painike.png");
+}
+
+#nav i:hover{
+    opacity:0%;
+    transition:0.5s;
+}
+
+/* Contentin sisältö */
+#content{
+    overflow:hidden;
+    float:left;
+    background-color:green;
+    width:856px;
+    height:700px;
+    border-bottom: 2px solid lightseagreen;
+    border-top: 2px solid lightseagreen;
+    box-sizing:border-box;
+}
+
+#content p, h2{
+    /*background-color:red;*/
+    margin:20px;
+}
+
+#content, #nav{
+    background-image: linear-gradient(black, teal, black);
+}
+
+/* Slideshowin määritykset, lähde W3Schools How To */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+#kuva1{
+    margin-left:170px;
+    margin-right:170px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #22dad0;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #016b6b;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.t1{
+  animation:tekstihaivytys 3s;
+}
+.t2{
+  animation:tekstihaivytys 4s;
+}
+.t3{
+  animation:tekstihaivytys 5s;
+}
+.t4{
+  animation:tekstihaivytys 6s;
+}
+
+#content img{
+  /*background-color:blue;*/
+  float:left;
+  animation:haivytys 3s;
+  margin-top:30px;
+}
+
+#col{
+  /*background-color:green;*/
+  width:550px;
+  float:left;
+  margin-top:20px;
+  margin-left:20px;
+}
+
+#ikonit{
+  /*background-color:green;*/
+  width:536px;
+  margin:auto;
+}
+
+#content-icons img{
+  margin-top:60px;
+  margin-left:20px;
+  margin-right:20px;
+  height:64px;
+  width:64px;
+}
+
+#content-icons{
+  overflow:auto;
+  float:left;
+  background-color:green;
+  width:856px;
+  height:700px;
+  border-bottom: 2px solid lightseagreen;
+  border-top: 2px solid lightseagreen;
+  box-sizing:border-box;
+  text-shadow:2px 2px 2px black;
+  text-align:center;
+}
+
+#content-icons, #nav{
+  background-image: linear-gradient(black, teal, black);
+}
+
+#content-icons img:hover{
+  transform:scale(1.3);
+  transition:1s;
+}
+
+#content-icons p{
+  /*background-color:red;*/
+  text-align:center;
+  display:inline-block;
+}
+
+#ikonit2{
+  /*background-color:green;*/
+  width:212px;
+  margin:auto;
+}
+
+#ikonit2 img{
+  /*background-color:green;*/
+  margin-top:10px;
+}
+
+#vali{
+  margin-top:20px;
+}
+
+.ta1{
+  animation:tekstihaivytys 2s;
+}
+.ta2{
+  animation:tekstihaivytys 3s;
+}
+.ta3{
+  animation:tekstihaivytys 4s;
+}
+.ta4{
+  animation:tekstihaivytys 5s;
+}
+.ta5{
+  animation:tekstihaivytys 6s;
+}
+#vali{
+  animation:tekstihaivytys 7s;
+}
+.ta6{
+  animation:tekstihaivytys 10s;
+}
+.ta7{
+  animation:tekstihaivytys 11s;
+}
