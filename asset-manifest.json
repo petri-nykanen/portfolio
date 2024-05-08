@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3b84fe0b.css",
+    "main.js": "/static/js/main.02f808da.js",
+    "static/js/787.7da95b79.chunk.js": "/static/js/787.7da95b79.chunk.js",
+    "static/media/Gloryn Regular.ttf": "/static/media/Gloryn Regular.e28a0a8c0fc032d5ccc1.ttf",
+    "index.html": "/index.html",
+    "main.3b84fe0b.css.map": "/static/css/main.3b84fe0b.css.map",
+    "main.02f808da.js.map": "/static/js/main.02f808da.js.map",
+    "787.7da95b79.chunk.js.map": "/static/js/787.7da95b79.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3b84fe0b.css",
+    "static/js/main.02f808da.js"
+  ]
+}
