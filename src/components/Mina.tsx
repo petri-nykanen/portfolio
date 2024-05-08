@@ -21,7 +21,7 @@ export const Mina : React.FC = () : React.ReactElement => {
                 Minut voi tavoittaa myös käyttämistäni sosiaalisista medioista. Ne löytyvät valikosta "Sosiaalinen media".
                 </p>
             </div>
-            <img style={{float:"left"}} src={"https://cpeny003-xamk.github.io/portfolio/images/mina.png"}/>
+            <img style={{float:"left"}} src={"https://petri-nykanen.github.io/portfolio/images/mina.png"}/>
         </div>
   </>
   )

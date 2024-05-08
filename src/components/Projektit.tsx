@@ -6,9 +6,9 @@ export const Projektit : React.FC = () : React.ReactElement => {
     <div id="col" style={{textShadow:"1.5px 1.5px 1.5px black"}}>
 
         <h2 className="fade">Tekemiäni web-projekteja</h2>
-        <p className="fade"><a style={{color:"cyan"}} target={"_blank"} href={"https://cpeny003-xamk.github.io/lopputyoso3/"}>Pokemon-tietokanta</a> - Käyttöliittymä, joka näyttää dataa PokéAPI:sta. Sovellusohjelmointikurssin lopputyö.</p>
-        <p className="fade"><a style={{color:"cyan"}} target={"_blank"} href={"https://cpeny003-xamk.github.io/csvlukija/"}>CSV-lukija</a> - Listaa syötetyt CSV-tiedostot. Tuloksia voidaan filtteröidä haulla tai duplikaattirivien mukaan. Toimeksianto Etelä-Savon hyvinvointialueelta.</p>
-        <p className="fade"><a style={{color:"cyan"}} target={"_blank"} href={"https://cpeny003-xamk.github.io/kipukasettilaskuri/"}>Kipukasettilaskuri</a> - Selainpohjainen versio
+        <p className="fade"><a style={{color:"cyan"}} target={"_blank"} href={"https://petri-nykanen.github.io/lopputyoso3/"}>Pokemon-tietokanta</a> - Käyttöliittymä, joka näyttää dataa PokéAPI:sta. Sovellusohjelmointikurssin lopputyö.</p>
+        <p className="fade"><a style={{color:"cyan"}} target={"_blank"} href={"https://petri-nykanen.github.io/csvlukija/"}>CSV-lukija</a> - Listaa syötetyt CSV-tiedostot. Tuloksia voidaan filtteröidä haulla tai duplikaattirivien mukaan. Toimeksianto Etelä-Savon hyvinvointialueelta.</p>
+        <p className="fade"><a style={{color:"cyan"}} target={"_blank"} href={"https://petri-nykanen.github.io/kipukasettilaskuri/"}>Kipukasettilaskuri</a> - Selainpohjainen versio
         Excel-taulukosta kipukasettien annosteluun. Toimeksianto Etelä-Savon hyvinvointialueelta.</p>
         
         <h2 className="fade">Käyttämäni tekniikat web-kehitykseen</h2>

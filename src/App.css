@@ -38,14 +38,14 @@ h1, h2, p{
 /* Banneri ja logoteksti */
 #banner{
     margin:auto;
-    background-image:url("https://cpeny003-xamk.github.io/portfolio/images/kuvabanner.png");
+    background-image:url("https://petri-nykanen.github.io/portfolio/images/kuvabanner.png");
     width:560px;
     height:386px;
     animation:haivytys 3s;
 }
 
 #text{
-    background-image:url("https://cpeny003-xamk.github.io/portfolio/images/pnlogo.png");
+    background-image:url("https://petri-nykanen.github.io/portfolio/images/pnlogo.png");
     /* margin-top:305px; */
     margin:auto;
     width:348px;
@@ -114,19 +114,19 @@ li{
     box-shadow: 2px 2px 2px black;;
 }
 #a{
-    background-image:url("https://cpeny003-xamk.github.io/portfolio/images/painike_tietoja.png");
+    background-image:url("https://petri-nykanen.github.io/portfolio/images/painike_tietoja.png");
     animation:haivytys 3.5s;
 }
 #b{
-    background-image:url("https://cpeny003-xamk.github.io/portfolio/images/projektini.png");
+    background-image:url("https://petri-nykanen.github.io/portfolio/images/projektini.png");
     animation:haivytys 3.5s;
 }
 #c{
-    background-image:url("https://cpeny003-xamk.github.io/portfolio/images/painike_sos.png");
+    background-image:url("https://petri-nykanen.github.io/portfolio/images/painike_sos.png");
     animation:haivytys 3.5s;
 }
 #d{
-    background-image:url("https://cpeny003-xamk.github.io/portfolio/images/painike_videot.png");
+    background-image:url("https://petri-nykanen.github.io/portfolio/images/painike_videot.png");
     animation:haivytys 3.5s;
 }
 
@@ -137,7 +137,7 @@ li{
 #nav i{
     width:90px;
     height:20px;
-    background-image:url("https://cpeny003-xamk.github.io/portfolio/images/painike.png");
+    background-image:url("https://petri-nykanen.github.io/portfolio/images/painike.png");
 }
 
 #nav i:hover{
