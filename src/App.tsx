@@ -5,6 +5,7 @@ import { Mina } from "./components/Mina";
 import { Navigation } from "./components/navigation/Navigation";
 import { Projektit } from "./components/Projektit";
 import { Some } from "./components/Some";
+import logo from "./components/logo/pnlogo9.png";
 
 export const Context: React.Context<any> = createContext(undefined);
 
@@ -41,7 +42,7 @@ const App: React.FC = (): React.ReactElement => {
 				<div id="header">
 					{vaihda === "1" ? (
 						<h2>
-							<img src="https://petri-nykanen.github.io/portfolio/images/pnlogo.png" />
+							<img src={logo} />
 						</h2>
 					) : vaihda === "2" ? (
 						<h2>Tietoja minusta</h2>

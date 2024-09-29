@@ -17,11 +17,11 @@ export const Main: React.FC = (): React.ReactElement => {
 				</h2>
 				<span id="fade">Web Development</span>
 				<br />
-				<span>Front End</span>
+				<span id="fade">Front End</span>
 				<br />
-				<span>JavaScript / TypeScript</span>
+				<span id="fade">JavaScript / TypeScript</span>
 				<br />
-				<span>React</span>
+				<span id="fade">React</span>
 			</div>
 		</div>
 	);

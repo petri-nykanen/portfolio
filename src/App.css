@@ -8,8 +8,12 @@ body{
     font-family:gloryn;
 }
 
-h1, h2, p{
+h1, h2{
     margin:0;
+    color:rgb(88, 255, 247)
+}
+p{
+  margin: 0;
 }
 
 @font-face{
@@ -92,19 +96,6 @@ h1, h2, p{
     box-sizing:border-box;
     width:100px;
     height:700px;
-}
-
-#en{
-  background-image: url("./components/navigation/icons/en_icon_gray.png");
-}
-
-#en:hover{
-  opacity:0%;
-  transition:0.5s
-}
-
-#fi{
-
 }
 
 ul{
