@@ -11,12 +11,14 @@ export const Navigation: React.FC = (): React.ReactElement => {
 	return (
 		<div id="nav">
 			<ul>
+				{/* 
+				TODO LOCALIZATION
 				<li>
 					<div id="">
 						<img style={{ padding: 2 }} src={fi} />
 						<img id="en" style={{ padding: 2 }} src={en} />
 					</div>
-				</li>
+				</li> */}
 				<li id="d">
 					<i onClick={() => setVaihda("1")} className="fas fa-home"></i>
 				</li>
