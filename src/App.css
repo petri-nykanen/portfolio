@@ -45,7 +45,6 @@ h1, h2, p{
 }
 
 #text{
-    background-image:url("https://petri-nykanen.github.io/portfolio/images/pnlogo.png");
     /* margin-top:305px; */
     margin:auto;
     width:348px;
@@ -55,11 +54,11 @@ h1, h2, p{
 
 /* Sivuston rakenne */
 #wrapper{
-    border: 2px solid black;
+    border: 2px solid teal;
     background-color:teal;
-    border-radius:49px;
+    border-radius:52px;
     height:900px;
-    box-shadow:5px 5px 5px black;
+
 }
 
 #header{
@@ -95,9 +94,21 @@ h1, h2, p{
     height:700px;
 }
 
+#en{
+  background-image: url("./components/navigation/icons/en_icon_gray.png");
+}
+
+#en:hover{
+  opacity:0%;
+  transition:0.5s
+}
+
+#fi{
+
+}
+
 ul{
     float:left;
-    /*background-color:brown;*/
     width:100px;
 }
 
@@ -109,25 +120,31 @@ li{
     width:90px;
     height:20px;
     list-style-type: none;
-    background-color:lightseagreen;
-    border-radius:5px;
-    box-shadow: 2px 2px 2px black;;
 }
+
 #a{
     background-image:url("https://petri-nykanen.github.io/portfolio/images/painike_tietoja.png");
     animation:haivytys 3.5s;
+    border-radius:5px;
+    box-shadow: 2px 2px 2px black;
 }
 #b{
-    background-image:url("https://petri-nykanen.github.io/portfolio/images/projektini.png");
+    background-image:url("https://petri-nykanen.github.io/portfolio/images/taidot.png");
     animation:haivytys 3.5s;
+    border-radius:5px;
+    box-shadow: 2px 2px 2px black;
 }
 #c{
-    background-image:url("https://petri-nykanen.github.io/portfolio/images/painike_sos.png");
+    background-image:url("https://petri-nykanen.github.io/portfolio/images/links.png");
     animation:haivytys 3.5s;
+    border-radius:5px;
+    box-shadow: 2px 2px 2px black;
 }
 #d{
-    background-image:url("https://petri-nykanen.github.io/portfolio/images/painike_videot.png");
+    background-image:url("https://petri-nykanen.github.io/portfolio/images/etusivu.png");
     animation:haivytys 3.5s;
+    border-radius:5px;
+    box-shadow: 2px 2px 2px black;
 }
 
 #nav a:link, a:visited{
@@ -147,7 +164,9 @@ li{
 
 /* Contentin sisältö */
 #content{
-    overflow:hidden;
+    overflow:auto;
+    scroll-behavior: smooth;
+    scrollbar-color: #890549 teal;
     float:left;
     background-color:green;
     width:856px;
@@ -163,7 +182,7 @@ li{
 }
 
 #content, #nav{
-    background-image: linear-gradient(black, teal, black);
+    background-image: linear-gradient(#003131, teal, #003131);
 }
 
 /* Slideshowin määritykset, lähde W3Schools How To */
@@ -323,7 +342,7 @@ li{
 }
 
 #content-icons, #nav{
-  background-image: linear-gradient(black, teal, black);
+  background-image: linear-gradient(#003131, teal, #003131);
 }
 
 #content-icons img:hover{
@@ -375,4 +394,18 @@ li{
 }
 .ta7{
   animation:tekstihaivytys 11s;
+}
+
+/* Gallerian määritykset */
+
+#gallery i{
+  font-size: 250%;
+  margin:5px;
+  text-shadow: 2px 2px 2px black;
+}
+
+#gallery img{
+  width: 35%;
+  border: 1px solid cyan;
+  box-shadow: 1.5px 1.5px 1.5px black,
 }
