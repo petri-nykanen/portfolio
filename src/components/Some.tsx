@@ -1,6 +1,4 @@
 import type React from "react";
-import github from "./pngegg.png";
-import linkedin from "./linkedin.png";
 
 export const Some: React.FC = (): React.ReactElement => {
 	return (
@@ -10,6 +8,7 @@ export const Some: React.FC = (): React.ReactElement => {
 					<a href="https://www.facebook.com/petri.nykanen.33" target="blank">
 						<img
 							className="ta1"
+							alt=""
 							src="https://petri-nykanen.github.io/portfolio/images/facebook.png"
 						/>
 						<br />
@@ -24,6 +23,7 @@ export const Some: React.FC = (): React.ReactElement => {
 					>
 						<img
 							className="ta2"
+							alt=""
 							src="https://petri-nykanen.github.io/portfolio/images/instagram.png"
 						/>
 						<br />
@@ -35,6 +35,7 @@ export const Some: React.FC = (): React.ReactElement => {
 					<a href="https://github.com/petri-nykanen" target="blank">
 						<img
 							className="ta2"
+							alt=""
 							src="https://petri-nykanen.github.io/portfolio/images/pngegg.png"
 						/>
 						<br />
@@ -49,6 +50,7 @@ export const Some: React.FC = (): React.ReactElement => {
 					>
 						<img
 							className="ta2"
+							alt=""
 							src="https://petri-nykanen.github.io/portfolio/images/linkedin.png"
 						/>
 						<br />

@@ -1,10 +1,11 @@
-import React, { useContext } from "react";
+import type React from "react";
+import { useContext } from "react";
 import GalleryScreen from "./gallery/gallery-screen";
 
 export const Main: React.FC = (): React.ReactElement => {
 	return (
 		<div id="content">
-			<p className="fade"></p>
+			<p className="fade" />
 			<GalleryScreen />
 
 			<div style={{ textAlign: "center" }}>

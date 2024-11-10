@@ -1,4 +1,4 @@
-import React from "react";
+import type React from "react";
 
 export const Projektit: React.FC = (): React.ReactElement => {
 	return (
@@ -63,9 +63,10 @@ export const Projektit: React.FC = (): React.ReactElement => {
 					<br />
 					AWS Lambda
 					<br />
-					Python<br/>
-					C#<br/>
-					
+					Python
+					<br />
+					C#
+					<br />
 					<br />
 				</p>
 

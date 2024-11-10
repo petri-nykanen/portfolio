@@ -1,4 +1,4 @@
-import React from "react";
+import type React from "react";
 
 export const Mina: React.FC = (): React.ReactElement => {
 	const pvm = new Date();
@@ -7,7 +7,7 @@ export const Mina: React.FC = (): React.ReactElement => {
 	return (
 		<>
 			<div id="content">
-				<div id="col" style={{ textShadow: "1.5px 1.5px 1.5px black" }}>
+				<div id="col-mina" style={{ textShadow: "1.5px 1.5px 1.5px black" }}>
 					<h2 className="t1">Kuka olen?</h2>
 					<p className="t1">
 						Nimeni Petri Nykänen ja asun tällä hetkellä Mikkelissä.
@@ -44,6 +44,7 @@ export const Mina: React.FC = (): React.ReactElement => {
 					style={{ float: "left" }}
 					width="30%"
 					src="https://petri-nykanen.github.io/portfolio/images/mina.png"
+					alt=""
 				/>
 			</div>
 		</>

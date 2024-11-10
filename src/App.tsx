@@ -1,11 +1,12 @@
-import React, { createContext, useState } from "react";
+import type React from "react";
+import { ReactElement, ReactNode, createContext, useState } from "react";
 import "./App.css";
 import { Main } from "./components/Main";
 import { Mina } from "./components/Mina";
 import { Navigation } from "./components/navigation/Navigation";
 import { Projektit } from "./components/Projektit";
 import { Some } from "./components/Some";
-import logo from "./components/logo/pnlogo9.png";
+import logo from "./components/logo/pnlogo5.png";
 
 export const Context: React.Context<any> = createContext(undefined);
 
@@ -13,7 +14,7 @@ const App: React.FC = (): React.ReactElement => {
 	const [vaihda, setVaihda] = useState<string>("1");
 	const currentYear = new Date().getFullYear();
 
-	const nakyma = (): any => {
+	const nakyma = () => {
 		return (
 			<Context.Provider value={{ vaihda, setVaihda }}>
 				<Navigation />
@@ -35,14 +36,14 @@ const App: React.FC = (): React.ReactElement => {
 	return (
 		<div>
 			<div onClick={() => setVaihda("1")}>
-				<div id="text"></div>
+				<div id="text" />
 			</div>
 
 			<div id="wrapper">
 				<div id="header">
 					{vaihda === "1" ? (
 						<h2>
-							<img src={logo} />
+							<img src={logo} alt="No logo" />
 						</h2>
 					) : vaihda === "2" ? (
 						<h2>Tietoja minusta</h2>
