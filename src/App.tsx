@@ -14,7 +14,7 @@ export const Context: React.Context<any> = createContext(undefined);
 
 const App: React.FC = (): React.ReactElement => {
   const currentYear = new Date().getFullYear();
-  const paths = ["", "about", "projects", "social"];
+  const paths = ["", "about", "projects"];
 
   return (
     <div>
@@ -30,7 +30,6 @@ const App: React.FC = (): React.ReactElement => {
             <Route index element={<Main />} />
             <Route path="about" element={<Mina />} />
             <Route path="projects" element={<Projektit />} />
-            <Route path="social" element={<Some />} />
           </Route>
         </Routes>
         <div id="footer">
