@@ -6,64 +6,39 @@ import { Mina } from "./components/Mina";
 import { Navigation } from "./components/navigation/Navigation";
 import { Projektit } from "./components/Projektit";
 import { Some } from "./components/Some";
-import logo from "./components/logo/pnlogo5.png";
+import logo from "./components/logo/pnlogo11.png";
+import NavigationNew from "./components/navigation/NavigationNew";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 export const Context: React.Context<any> = createContext(undefined);
 
 const App: React.FC = (): React.ReactElement => {
-	const [vaihda, setVaihda] = useState<string>("1");
-	const currentYear = new Date().getFullYear();
+  const currentYear = new Date().getFullYear();
+  const paths = ["", "about", "projects", "social"];
 
-	const nakyma = () => {
-		return (
-			<Context.Provider value={{ vaihda, setVaihda }}>
-				<Navigation />
-				{vaihda === "1" ? (
-					<Main />
-				) : vaihda === "2" ? (
-					<Mina />
-				) : vaihda === "3" ? (
-					<Projektit />
-				) : vaihda === "4" ? (
-					<Some />
-				) : (
-					<></>
-				)}
-			</Context.Provider>
-		);
-	};
-
-	return (
-		<div>
-			<div onClick={() => setVaihda("1")}>
-				<div id="text" />
-			</div>
-
-			<div id="wrapper">
-				<div id="header">
-					{vaihda === "1" ? (
-						<h2>
-							<img src={logo} alt="No logo" />
-						</h2>
-					) : vaihda === "2" ? (
-						<h2>Tietoja minusta</h2>
-					) : vaihda === "3" ? (
-						<h2>Taidot ja osaaminen</h2>
-					) : vaihda === "4" ? (
-						<h2>Linkkejä ja sosiaalinen media</h2>
-					) : (
-						<></>
-					)}
-				</div>
-
-				{nakyma()}
-
-				<div id="footer">
-					<p>© Petri Nykänen {currentYear}</p>
-				</div>
-			</div>
-		</div>
-	);
+  return (
+    <div>
+      <div id="wrapper">
+        <div id="header">
+          <h2>
+            <img src={logo} alt="No logo" />
+          </h2>
+        </div>
+        <NavigationNew pathName={paths} />
+        <Routes>
+          <Route path="portfolio">
+            <Route index element={<Main />} />
+            <Route path="about" element={<Mina />} />
+            <Route path="projects" element={<Projektit />} />
+            <Route path="social" element={<Some />} />
+          </Route>
+        </Routes>
+        <div id="footer">
+          <p>© Petri Nykänen {currentYear}</p>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default App;
