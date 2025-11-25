@@ -1,26 +1,34 @@
 import type React from "react";
-import { useContext, useEffect, useState } from "react";
+
+import { useContext, useEffect, useState, useRef } from "react";
 import GalleryScreen from "./gallery/gallery-screen";
 import IconTray from "./IconTray";
-
+import "./Main.css";
 export const Main: React.FC = (): React.ReactElement => {
   const [displayContact, setDisplayContact] = useState(false);
+  const intervalRef = useRef<number | null>(null);
 
   useEffect(() => {
-    autoToggle();
-  }, []);
-
-  const autoToggle = () => {
-    setTimeout(() => {
+    // initial show after 4s, then toggle every 4s
+    const initial = window.setTimeout(() => {
       setDisplayContact(true);
+      intervalRef.current = window.setInterval(() => {
+        setDisplayContact((prev) => !prev);
+      }, 4000);
     }, 4000);
 
-    setTimeout(() => {
-      setDisplayContact(false);
-    }, 8000);
-    setTimeout(() => {
-      autoToggle();
-    }, 12000);
+    return () => {
+      clearTimeout(initial);
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+      }
+    };
+  }, []);
+
+  const handleManualToggleOverride = (displayContact: boolean) => {
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+    }
   };
 
   return (
@@ -40,26 +48,51 @@ export const Main: React.FC = (): React.ReactElement => {
           Software Developer
           <br />
         </h2>
-        {displayContact ? (
-          <div id="fade">
-            <span id="fade">petri.nykaenen@gmail.com</span>
+
+        <div className="fade-wrapper" style={{ position: "relative" }}>
+          <div className={`fade-text ${displayContact ? "visible" : ""}`}>
+            <span>petri.nykaenen@gmail.com</span>
             <br />
-            <span id="fade">+358 50 5355 193</span>
+            <span>+358 50 5355 193</span>
             <br />
             <br />
             <br />
           </div>
-        ) : (
-          <div id="fade">
-            <span id="fade">Web Development</span>
+
+          <div className={`fade-text ${!displayContact ? "visible" : ""}`}>
+            <span>Web Development</span>
             <br />
-            <span id="fade">Front End</span>
+            <span>Front End</span>
             <br />
-            <span id="fade">JavaScript / TypeScript</span>
+            <span>JavaScript / TypeScript</span>
             <br />
-            <span id="fade">React</span>
+            <span>React</span>
           </div>
-        )}
+        </div>
+        <div style={{ fontSize: "50px" }}>
+          <span
+            onClick={() => setDisplayContact((prev) => !prev)}
+            className="no-caret"
+            style={
+              displayContact
+                ? { color: "gray", caretColor: "transparent" }
+                : { color: "white", caretColor: "transparent" }
+            }
+          >
+            •
+          </span>
+          <span
+            onClick={() => setDisplayContact((prev) => !prev)}
+            className="no-caret"
+            style={
+              displayContact
+                ? { color: "white", caretColor: "transparent" }
+                : { color: "gray", caretColor: "transparent" }
+            }
+          >
+            •
+          </span>
+        </div>
       </div>
       <div id="content-icons">
         {" "}

@@ -1,0 +1,30 @@
+.fade-wrapper {
+  position: relative;
+  /* ensure enough room for both blocks */
+  min-height: 5rem;
+}
+
+.fade-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  text-align: center;
+  color: white;
+  opacity: 0;
+  transition: opacity 800ms ease-in-out;
+  pointer-events: none;
+}
+
+.fade-text.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.no-caret {
+  caret-color: transparent; /* hides text caret */
+  user-select: none; /* prevents selection highlight */
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  outline: none; /* remove focus outline */
+}
