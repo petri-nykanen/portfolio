@@ -1,539 +1,530 @@
 body {
-	width: 960px;
-	height: 1300px;
-	margin: auto;
-	background-color: #c000da;
-	opacity: 1;
-	background-image: repeating-radial-gradient(
-			circle at 0 0,
-			transparent 0,
-			#c000da 15px
-		), repeating-linear-gradient(#52042c55, teal);
-	color: white;
-	font-family: gloryn;
+  width: 960px;
+  height: 1300px;
+  margin: auto;
+  background-color: #002020;
+  opacity: 1;
+  color: white;
+  font-family: gloryn;
 }
 
 h1,
 h2 {
-	margin: 0;
-	color: rgb(88, 255, 247);
+  margin: 0;
+  color: rgb(88, 255, 247);
 }
 p {
-	margin: 0;
+  margin: 0;
 }
 
 @font-face {
-	font-family: gloryn;
-	src: url("/public/fontit/Gloryn\ Regular.ttf");
+  font-family: gloryn;
+  src: url("/public/fontit/Gloryn\ Regular.ttf");
 }
 
 @keyframes haivytys {
-	0% {
-		opacity: 0%;
-	}
-	100% {
-		opacity: 100%;
-	}
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
 
 @keyframes tekstihaivytys {
-	0% {
-		opacity: 0%;
-	}
-	25% {
-		opacity: 0%;
-	}
-	50% {
-		opacity: 100%;
-	}
+  0% {
+    opacity: 0%;
+  }
+  25% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 100%;
+  }
 }
 
 #fade {
-	animation: haivytys 3s;
+  animation: haivytys 3s;
 }
 
 #textfade {
-	animation: tekstihaivytys 10s;
+  animation: tekstihaivytys 10s;
 }
 /* Banneri ja logoteksti */
 #banner {
-	margin: auto;
-	background-image: url("https://petri-nykanen.github.io/portfolio/images/kuvabanner.png");
-	width: 560px;
-	height: 386px;
-	animation: haivytys 3s;
+  margin: auto;
+  background-image: url("https://petri-nykanen.github.io/portfolio/images/kuvabanner.png");
+  width: 560px;
+  height: 386px;
+  animation: haivytys 3s;
 }
 
 #text {
-	/* margin-top:305px; */
-	margin: auto;
-	width: 348px;
-	height: 80px;
-	animation: tekstihaivytys 5s;
+  /* margin-top:305px; */
+  margin: auto;
+  width: 348px;
+  height: 80px;
+  animation: tekstihaivytys 5s;
 }
 
 /* Sivuston rakenne */
 #wrapper {
-	background-image: url("./mainbg2.png");
-	background-repeat: no-repeat;
-	border: 2px solid cyan;
-	background-color: teal;
-	border-radius: 52px;
-	height: 900px;
-	box-shadow: 1px 3px 3px 1px black;
+  background-image: url("./mainbg2.png");
+  background-repeat: no-repeat;
+  border: 2px solid cyan;
+  background-color: teal;
+  border-radius: 52px;
+  height: 900px;
+  box-shadow: 1px 3px 3px 1px black;
 }
 
 #header {
-	font-size: 30px;
-	text-shadow: 2px 2px 2px black;
-	line-height: 90px;
-	margin: auto;
-	text-align: center;
-	width: 100%;
-	height: 100px;
-	animation: tekstihaivytys 2s;
+  font-size: 30px;
+  text-shadow: 2px 2px 2px black;
+  line-height: 90px;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  animation: tekstihaivytys 2s;
 }
 
 #header img {
-	width: 80%;
+  width: 80%;
 }
 
 #footer {
-	overflow: auto;
-	text-align: center;
-	width: 100%;
-	height: 100px;
-	font-size: 20px;
-	line-height: 75px;
-	text-shadow: 2px 2px 2px black;
+  overflow: auto;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  font-size: 20px;
+  line-height: 75px;
+  text-shadow: 2px 2px 2px black;
 }
 
 /* Navigaation määritykset */
 #nav {
-	float: left;
-	background-color: green;
-	border-right: 2px solid lightseagreen;
-	border-top: 2px solid lightseagreen;
-	border-bottom: 2px solid lightseagreen;
-	box-sizing: border-box;
-	width: 100px;
-	height: 700px;
+  float: left;
+  background-color: green;
+  border-right: 2px solid lightseagreen;
+  border-top: 2px solid lightseagreen;
+  border-bottom: 2px solid lightseagreen;
+  box-sizing: border-box;
+  width: 100px;
+  height: 700px;
 }
 
 ul {
-	float: left;
-	width: 100px;
+  float: left;
+  width: 100px;
 }
 
 li {
-	color: black;
-	text-align: center;
-	margin: 5px;
-	margin-left: -35px;
-	width: 90px;
-	height: 20px;
-	list-style-type: none;
+  color: black;
+  text-align: center;
+  margin: 5px;
+  margin-left: -35px;
+  width: 90px;
+  height: 20px;
+  list-style-type: none;
 }
 
 #a {
-	background-image: url("https://petri-nykanen.github.io/portfolio/images/painike_tietoja.png");
-	animation: haivytys 3.5s;
-	border-radius: 5px;
-	box-shadow: 2px 2px 2px black;
+  background-image: url("https://petri-nykanen.github.io/portfolio/images/painike_tietoja.png");
+  animation: haivytys 3.5s;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px black;
 }
 #b {
-	background-image: url("https://petri-nykanen.github.io/portfolio/images/taidot.png");
-	animation: haivytys 3.5s;
-	border-radius: 5px;
-	box-shadow: 2px 2px 2px black;
+  background-image: url("https://petri-nykanen.github.io/portfolio/images/taidot.png");
+  animation: haivytys 3.5s;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px black;
 }
 #c {
-	background-image: url("https://petri-nykanen.github.io/portfolio/images/links.png");
-	animation: haivytys 3.5s;
-	border-radius: 5px;
-	box-shadow: 2px 2px 2px black;
+  background-image: url("https://petri-nykanen.github.io/portfolio/images/links.png");
+  animation: haivytys 3.5s;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px black;
 }
 #d {
-	background-image: url("https://petri-nykanen.github.io/portfolio/images/etusivu.png");
-	animation: haivytys 3.5s;
-	border-radius: 5px;
-	box-shadow: 2px 2px 2px black;
+  background-image: url("https://petri-nykanen.github.io/portfolio/images/etusivu.png");
+  animation: haivytys 3.5s;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px black;
 }
 
 #nav a:link,
 a:visited {
-	color: black;
-	text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 #nav i {
-	width: 90px;
-	height: 20px;
-	background-image: url("https://petri-nykanen.github.io/portfolio/images/painike.png");
+  width: 90px;
+  height: 20px;
+  background-image: url("https://petri-nykanen.github.io/portfolio/images/painike.png");
 }
 
 #nav i:hover {
-	opacity: 0%;
-	transition: 0.5s;
+  opacity: 0%;
+  transition: 0.5s;
 }
 
 /* Contentin sisältö */
 #content {
-	overflow: auto;
-	scroll-behavior: smooth;
-	scrollbar-color: #890549 teal;
-	float: left;
-	background-color: green;
-	width: 856px;
-	height: 700px;
-	border-bottom: 2px solid lightseagreen;
-	border-top: 2px solid lightseagreen;
-	box-sizing: border-box;
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-color: #890549 teal;
+  float: left;
+  background-color: green;
+  width: 856px;
+  height: 700px;
+  border-bottom: 2px solid lightseagreen;
+  border-top: 2px solid lightseagreen;
+  box-sizing: border-box;
 }
 
 #content p,
 h2 {
-	/*background-color:red;*/
-	margin: 20px;
+  /*background-color:red;*/
+  margin: 20px;
 }
 
 #content,
 #nav {
-	background-image: linear-gradient(#003131, teal, #003131);
+  background-image: linear-gradient(#003131, teal, #003131);
 }
 
 /* Slideshowin määritykset, lähde W3Schools How To */
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Slideshow container */
 .slideshow-container {
-	max-width: 1000px;
-	position: relative;
-	margin: auto;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
 
 #kuva1 {
-	margin-left: 170px;
-	margin-right: 170px;
+  margin-left: 170px;
+  margin-right: 170px;
 }
 
 /* Hide the images by default */
 .mySlides {
-	display: none;
+  display: none;
 }
 
 /* Next & previous buttons */
 .prev,
 .next {
-	cursor: pointer;
-	position: absolute;
-	top: 50%;
-	width: auto;
-	margin-top: -22px;
-	padding: 16px;
-	color: white;
-	font-weight: bold;
-	font-size: 18px;
-	transition: 0.6s ease;
-	border-radius: 0 3px 3px 0;
-	user-select: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
-	right: 0;
-	border-radius: 3px 0 0 3px;
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-	background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
 .text {
-	color: #f2f2f2;
-	font-size: 15px;
-	padding: 8px 12px;
-	position: absolute;
-	bottom: 8px;
-	width: 100%;
-	text-align: center;
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
 }
 
 /* Number text (1/3 etc) */
 .numbertext {
-	color: #f2f2f2;
-	font-size: 12px;
-	padding: 8px 12px;
-	position: absolute;
-	top: 0;
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
 }
 
 /* The dots/bullets/indicators */
 .dot {
-	cursor: pointer;
-	height: 15px;
-	width: 15px;
-	margin: 0 2px;
-	background-color: #22dad0;
-	border-radius: 50%;
-	display: inline-block;
-	transition: background-color 0.6s ease;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #22dad0;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
 .active,
 .dot:hover {
-	background-color: #016b6b;
+  background-color: #016b6b;
 }
 
 /* Fading animation */
 .fade {
-	-webkit-animation-name: fade;
-	-webkit-animation-duration: 1.5s;
-	animation-name: fade;
-	animation-duration: 1.5s;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
-	from {
-		opacity: 0.4;
-	}
-	to {
-		opacity: 1;
-	}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-	from {
-		opacity: 0.4;
-	}
-	to {
-		opacity: 1;
-	}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .t1 {
-	animation: tekstihaivytys 3s;
+  animation: tekstihaivytys 3s;
 }
 .t2 {
-	animation: tekstihaivytys 4s;
+  animation: tekstihaivytys 4s;
 }
 .t3 {
-	animation: tekstihaivytys 5s;
+  animation: tekstihaivytys 5s;
 }
 .t4 {
-	animation: tekstihaivytys 6s;
+  animation: tekstihaivytys 6s;
 }
 
 #content img {
-	/*background-color:blue;*/
-	float: left;
-	animation: haivytys 3.5s;
-	margin-top: 30px;
+  /*background-color:blue;*/
+  float: left;
+  animation: haivytys 3.5s;
+  margin-top: 30px;
 }
 
 #col {
-	/*background-color:green;*/
-	width: 550px;
-	float: left;
-	margin-top: 20px;
-	margin-left: 20px;
+  /*background-color:green;*/
+  width: 550px;
+  float: left;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 #col-mina {
-	/*background-color:green;*/
-	width: 550px;
-	float: left;
-	margin-top: 20px;
-	margin-left: 20px;
+  /*background-color:green;*/
+  width: 550px;
+  float: left;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 #ikonit {
-	/*background-color:green;*/
-	width: 536px;
-	margin: auto;
+  /*background-color:green;*/
+  width: 536px;
+  margin: auto;
 }
 
 #content-icons img {
-	margin-top: 60px;
-	margin-left: 20px;
-	margin-right: 20px;
-	height: 64px;
-	width: 64px;
+  margin-top: 60px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 64px;
+  width: 64px;
 }
 
 #content-icons {
-	overflow: auto;
-	float: left;
-	background-color: green;
-	width: 856px;
-	height: 700px;
-	border-bottom: 2px solid lightseagreen;
-	border-top: 2px solid lightseagreen;
-	box-sizing: border-box;
-	text-shadow: 2px 2px 2px black;
-	text-align: center;
+  overflow: auto;
+  float: left;
+  background-color: green;
+  width: 856px;
+  height: 700px;
+  border-bottom: 2px solid lightseagreen;
+  border-top: 2px solid lightseagreen;
+  box-sizing: border-box;
+  text-shadow: 2px 2px 2px black;
+  text-align: center;
 }
 
 #content-icons,
 #nav {
-	background-image: linear-gradient(#003131, teal, #003131);
+  background-image: linear-gradient(#003131, teal, #003131);
 }
 
 #content-icons img:hover {
-	transform: scale(1.3);
-	transition: 1s;
+  transform: scale(1.3);
+  transition: 1s;
 }
 
 #content-icons p {
-	/*background-color:red;*/
-	text-align: center;
-	display: inline-block;
+  /*background-color:red;*/
+  text-align: center;
+  display: inline-block;
 }
 
 #ikonit2 {
-	/*background-color:green;*/
-	width: 212px;
-	margin: auto;
+  /*background-color:green;*/
+  width: 212px;
+  margin: auto;
 }
 
 #ikonit2 img {
-	/*background-color:green;*/
-	margin-top: 10px;
+  /*background-color:green;*/
+  margin-top: 10px;
 }
 
 #vali {
-	margin-top: 20px;
+  margin-top: 20px;
 }
 
 .ta1 {
-	animation: tekstihaivytys 2s;
+  animation: tekstihaivytys 2s;
 }
 .ta2 {
-	animation: tekstihaivytys 3s;
+  animation: tekstihaivytys 3s;
 }
 .ta3 {
-	animation: tekstihaivytys 4s;
+  animation: tekstihaivytys 4s;
 }
 .ta4 {
-	animation: tekstihaivytys 5s;
+  animation: tekstihaivytys 5s;
 }
 .ta5 {
-	animation: tekstihaivytys 6s;
+  animation: tekstihaivytys 6s;
 }
 #vali {
-	animation: tekstihaivytys 7s;
+  animation: tekstihaivytys 7s;
 }
 .ta6 {
-	animation: tekstihaivytys 10s;
+  animation: tekstihaivytys 10s;
 }
 .ta7 {
-	animation: tekstihaivytys 11s;
+  animation: tekstihaivytys 11s;
 }
 
 /* Gallerian määritykset */
 
 #gallery i {
-	animation: tekstihaivytys 0.5s;
-	font-size: 250%;
-	margin: 5px;
-	text-shadow: 2px 2px 2px black;
+  animation: tekstihaivytys 0.5s;
+  font-size: 250%;
+  margin: 5px;
+  text-shadow: 2px 2px 2px black;
 }
 
 #gallery img {
-	width: 35%;
-	max-height: 400px;
-	border: 1px solid cyan;
-	box-shadow: 1.5px 1.5px 1.5px black,;
+  width: 35%;
+  max-height: 400px;
+  border: 1px solid cyan;
+  box-shadow: 1.5px 1.5px 1.5px black;
 }
 
 /* Mobile */
 
 @media (max-width: 760px) {
-	body {
-		margin: 0;
-		max-width: 480px;
-		max-height: 650px;
-		background-image: repeating-radial-gradient(
-				circle at 0 0,
-				transparent 0,
-				#c000da 15px
-			), repeating-linear-gradient(#52042c55, teal);
-	}
+  body {
+    margin: 0;
+    max-width: 480px;
+    max-height: 650px;
+    background-color: #002b2c;
+  }
 
-	#nav {
-		width: 100%;
-		height: 60px;
-	}
+  #nav {
+    width: 100%;
+    height: 60px;
+  }
 
-	#nav ul {
-		width: 100%;
-		display: inline;
-	}
+  #nav ul {
+    width: 100%;
+    display: inline;
+  }
 
-	#nav li {
-		margin: 1px;
-		display: inline;
-	}
+  #nav li {
+    margin: 1px;
+    display: inline;
+  }
 
-	#content {
-		overflow: auto;
-		scroll-behavior: smooth;
-		scrollbar-color: #890549 #008080;
-		float: left;
-		max-width: 100%;
-		max-height: 620px;
-		border-bottom: 2px solid lightseagreen;
-		border-top: 2px solid lightseagreen;
-		box-sizing: border-box;
-	}
+  #content {
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-color: #890549 #008080;
+    float: left;
+    max-width: 100%;
+    max-height: 620px;
+    border-bottom: 2px solid lightseagreen;
+    border-top: 2px solid lightseagreen;
+    box-sizing: border-box;
+  }
 
-	#content img {
-		width: 45%;
-	}
+  #content img {
+    width: 45%;
+  }
 
-	#header img {
-		width: 70%;
-	}
+  #header img {
+    width: 70%;
+  }
 
-	#header h2 {
-		text-align: center;
-		display: inline;
-		width: 100%;
-		font-size: 95%;
-	}
+  #header h2 {
+    text-align: center;
+    display: inline;
+    width: 100%;
+    font-size: 95%;
+  }
 
-	#text {
-		display: none;
-	}
-	#wrapper {
-		background-image: url("./mainbg2.png");
-		margin: 5%;
-		height: 900px;
-	}
+  #text {
+    display: none;
+  }
+  #wrapper {
+    background-image: url("./mainbg2.png");
+    margin: 5%;
+    height: 900px;
+  }
 
-	#col {
-		width: 95%;
-	}
+  #col {
+    width: 95%;
+  }
 
-	h1 {
-		width: 100%;
-		font-size: 85%;
-	}
+  h1 {
+    width: 100%;
+    font-size: 85%;
+  }
 
-	#content-icons {
-		max-width: 100%;
-		max-height: 620px;
-	}
+  #content-icons {
+    max-width: 100%;
+    max-height: 620px;
+  }
 
-	#col-mina {
-		width: 50%;
-	}
+  #col-mina {
+    width: 50%;
+  }
 
-	#ikonit {
-		width: 50%;
-	}
+  #ikonit {
+    width: 50%;
+  }
 }
